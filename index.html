@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Telefones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📞 Lista de Telefones</h1>
+        
+        <!-- Formulário para adicionar contatos -->
+        <div class="form-container">
+            <input type="text" id="nomeInput" placeholder="Nome do contato">
+            <input type="tel" id="telefoneInput" placeholder="Número de telefone">
+            <button onclick="adicionarContato()">Adicionar Contato</button>
+        </div>
+
+        <!-- Lista de contatos -->
+        <div class="lista-contatos">
+            <h2>Meus Contatos</h2>
+            <ul id="listaContatos">
+                <!-- Os contatos aparecerão aqui -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    color: #667eea;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+h2 {
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+/* Formulário */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+button {
+    padding: 15px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Lista de contatos */
+.lista-contatos {
+    margin-top: 20px;
+}
+
+#listaContatos {
+    list-style: none;
+}
+
+.contato-item {
+    background: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.contato-item:hover {
+    transform: translateX(5px);
+    background: #e9ecef;
+}
+
+.contato-info {
+    flex: 1;
+}
+
+.contato-nome {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.contato-telefone {
+    color: #666;
+    margin-top: 5px;
+}
+
+.btn-remover {
+    background: #ff4757;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.btn-remover:hover {
+    background: #ff3838;
+}
+
+/* Mensagem quando não há contatos */
+.sem-contatos {
+    text-align: center;
+    color: #999;
+    padding: 20px;
+    font-style: italic;
+}
+
+/* Ações dos contatos (botões) */
+.contato-acoes {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-copiar {
+    background: #1dd1a1;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-copiar:hover {
+    background: #10ac84;
+    transform: translateY(-2px);
+}
+
+.btn-copiar:active {
+    transform: translateY(0);
+}
+
+/* Atualizar o estilo do botão remover para ficar do mesmo tamanho */
+.btn-remover {
+    background: #ff4757;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-remover:hover {
+    background: #ff3838;
+    transform: translateY(-2px);
+}
+
+.btn-remover:active {
+    transform: translateY(0);
+}
